@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;1,500&display=swap");
 *,
 *::before,
 *::after {
@@ -6,11 +6,350 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
 }
 
-body {
-  height: 100vh;
-  width: 100vw;
+:root {
+  --color-priminary-bg: #0f162d;
+  --color-secendary-bg: #272d42;
+  --color-secendary: #ffffff;
+}
+
+body .sectionAI {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+  background-color: var(--color-priminary-bg);
+}
+
+body .sectionAI .container {
+  padding: 48px 13px 64px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  gap: 24px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: var(--color-secendary);
+}
+
+body .sectionAI .container .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 16px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .sectionAI .container .description .description-header {
+  line-height: 40px;
+  letter-spacing: 0.02em;
+}
+
+body .sectionAI .container .description .description-header h2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+body .sectionAI .container .description .description-paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+body .sectionAI .container .tiles {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  gap: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+body .sectionAI .container .tiles .tile {
+  position: relative;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+  min-height: 196px;
+  border-radius: 20px;
+  background-color: var(--color-secendary-bg);
+  gap: 16px;
+}
+
+body .sectionAI .container .tiles .tile .top-of-tile {
+  margin-top: 20px;
+  min-width: 167px;
+  height: 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .sectionAI .container .tiles .tile .top-of-tile__ico {
+  height: 56px;
+  width: 56px;
+}
+
+body .sectionAI .container .tiles .tile .top-of-tile__ico--one {
+  height: 100%;
+  width: 100%;
+  background-image: url("/img/Frame1.png");
+  background-position: center;
+  background-size: contain;
+}
+
+body .sectionAI .container .tiles .tile .top-of-tile__ico--two {
+  height: 100%;
+  width: 100%;
+  background-image: url("/img/Frame2.png");
+  background-position: center;
+  background-size: contain;
+}
+
+body .sectionAI .container .tiles .tile .top-of-tile__ico--three {
+  height: 100%;
+  width: 100%;
+  background-image: url("/img/Frame3.png");
+  background-position: center;
+  background-size: contain;
+}
+
+body .sectionAI .container .tiles .tile .top-of-tile__ico--four {
+  height: 100%;
+  width: 100%;
+  background-image: url("/img/Frame4.png");
+  background-position: center;
+  background-size: contain;
+}
+
+body .sectionAI .container .tiles .tile .top-of-tile .tile-header {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.02rem;
+}
+
+body .sectionAI .container .tiles .tile .tile-text {
+  width: 303px;
+  height: 44px;
+  margin-bottom: 20px;
+}
+
+body .sectionAI .container .tiles .tile .tile-text .title-paragraf {
+  opacity: 0.5;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.002em;
+}
+
+@media (min-width: 600px) {
+  body .sectionAI .container {
+    margin: auto;
+    padding: 0;
+    max-width: 496px;
+  }
+  body .sectionAI .container .description {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .sectionAI .container .description .description-header {
+    min-width: 490px;
+    height: 112px;
+    line-height: 56px;
+  }
+  body .sectionAI .container .description .description-header h2 {
+    line-height: 56px;
+    font-size: 48px;
+    letter-spacing: 0.45px;
+  }
+  body .sectionAI .container .description .description-header .description-paragraph {
+    width: 100%;
+    line-height: 24px;
+  }
+  body .sectionAI .container .tiles {
+    min-width: 496px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    gap: 16px;
+  }
+  body .sectionAI .container .tiles .tile {
+    width: 240px;
+    height: 218px;
+    border-radius: 20px;
+  }
+  body .sectionAI .container .tiles .tile .tile-text {
+    width: 209px;
+    height: 66px;
+  }
+  body .sectionAI .container .tiles .tile .tile-text .title-paragraf {
+    opacity: 0.5;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body .sectionAI .container {
+    max-width: 1200px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    gap: 109px;
+  }
+  body .sectionAI .container .description {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 467px;
+    gap: 24px;
+  }
+  body .sectionAI .container .description .description-header {
+    height: 112px;
+    line-height: 56px;
+  }
+  body .sectionAI .container .description .description-header h2 {
+    font-size: 48px;
+    letter-spacing: 0.45px;
+  }
+  body .sectionAI .container .description .description-paragraph {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  body .sectionAI .container .tiles {
+    max-width: 562px;
+    height: 511px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    gap: 24px;
+  }
+  body .sectionAI .container .tiles .tile {
+    width: 268px;
+    height: 240px;
+    gap: 16px;
+  }
+  body .sectionAI .container .tiles .tile .top-of-tile {
+    min-height: 104px;
+    margin-top: 24px;
+  }
+  body .sectionAI .container .tiles .tile .top-of-tile__ico {
+    height: 64px;
+    width: 64px;
+  }
+  body .sectionAI .container .tiles .tile .tile-text {
+    margin-bottom: 24px;
+    width: 236px;
+    height: 72px;
+  }
+  body .sectionAI .container .tiles .tile .tile-text .title-paragraf {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 /*# sourceMappingURL=home-page.css.map */
