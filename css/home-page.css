@@ -172,7 +172,7 @@ body .sectionAI .container .tiles .tile .top-of-tile__ico {
 body .sectionAI .container .tiles .tile .top-of-tile__ico--one {
   height: 100%;
   width: 100%;
-  background-image: url("/img/Frame1.png");
+  background-image: url("/dist/images/Frame1.png");
   background-position: center;
   background-size: contain;
 }
@@ -180,7 +180,7 @@ body .sectionAI .container .tiles .tile .top-of-tile__ico--one {
 body .sectionAI .container .tiles .tile .top-of-tile__ico--two {
   height: 100%;
   width: 100%;
-  background-image: url("/img/Frame2.png");
+  background-image: url("/dist/images/Frame2.png");
   background-position: center;
   background-size: contain;
 }
@@ -188,7 +188,7 @@ body .sectionAI .container .tiles .tile .top-of-tile__ico--two {
 body .sectionAI .container .tiles .tile .top-of-tile__ico--three {
   height: 100%;
   width: 100%;
-  background-image: url("/img/Frame3.png");
+  background-image: url("/dist/images/Frame3.png");
   background-position: center;
   background-size: contain;
 }
@@ -196,7 +196,7 @@ body .sectionAI .container .tiles .tile .top-of-tile__ico--three {
 body .sectionAI .container .tiles .tile .top-of-tile__ico--four {
   height: 100%;
   width: 100%;
-  background-image: url("/img/Frame4.png");
+  background-image: url("/dist/images/Frame4.png");
   background-position: center;
   background-size: contain;
 }
